@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GetTicket_View</title>
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .contentBox {
+            text-align: center;
+            width: 30%;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border: solid 1px skyblue;
+        }
+
+        .contentBox TextArea {
+            max-height: 300px;
+            max-width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="contentBox">
+        @Html.ActionLink("生成二维码", "GetTicket_View", "PromotionalSupport")
+        <div>
+            <img src="@ViewBag.ticketUrl" />
+        </div>
+    </div>
+</body>
+</html>

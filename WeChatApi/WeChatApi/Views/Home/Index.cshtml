@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>.NET接入微信</title>
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .contentBox {
+            width: 80%;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border: solid 1px skyblue;
+        }
+
+        .contentBox ul {
+            list-style: none;
+        }
+
+        .contentBox ul li {
+            float: left;
+            padding: 0px 20px;
+        }
+
+        .contentBox ul li a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="contentBox">
+        <ul>
+            <li>@Html.ActionLink("获取Token", "GetToken", "FoundationSupport")</li>
+            <li>@Html.ActionLink("向用户发送消息", "SendMessageToUser_View", "SendMessage")</li>
+            <li>@Html.ActionLink("获取二维码", "GetTicket_View", "PromotionalSupport")</li>
+        </ul>
+
+    </div>
+</body>
+</html>
